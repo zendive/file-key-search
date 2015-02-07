@@ -1,0 +1,872 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\IDR_MAINFRAME.ico"
+IDR_APP_TYPE            ICON                    "res\\IDR_APP_TYPE.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\IDR_MAINFRAME.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_CLOSE
+    SEPARATOR
+    BUTTON      ID_WINDOW_TILE_HORZ
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\t^+N",                   ID_FILE_NEW
+        MENUITEM "&Open...\t^+O",               ID_FILE_OPEN
+        MENUITEM "&Close\t^+W",                 ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               ID_APP_EXIT
+    END
+    POPUP "&Keys"
+    BEGIN
+        MENUITEM "Keys &Manager",               ID_MANAGEKEYS
+        MENUITEM SEPARATOR
+        MENUITEM "&Import from File...",        ID_KEYS_IMPORT
+        MENUITEM "&Export to File...",          ID_KEYS_EXPORT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About App...",               ID_APP_ABOUT
+    END
+END
+
+IDR_APP_TYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\t^+N",                   ID_FILE_NEW
+        MENUITEM "&Open...\t^+O",               ID_FILE_OPEN
+        MENUITEM "&Close\t^+W",                 ID_FILE_CLOSE
+        MENUITEM "&Save\t^+S",                  ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               ID_APP_EXIT
+    END
+    POPUP "&Keys"
+    BEGIN
+        MENUITEM "Keys &Manager\tF5",           ID_MANAGEKEYS
+        MENUITEM SEPARATOR
+        MENUITEM "&Import from File...\tF6",    ID_KEYS_IMPORT
+        MENUITEM "&Export to File...\tF7",      ID_KEYS_EXPORT
+    END
+    POPUP "&Media"
+    BEGIN
+        MENUITEM "Start &Analyze\tF3",          ID_ANALYZE_START
+        MENUITEM "Start &Extract\tF4",          ID_EXTRACT_START
+        MENUITEM SEPARATOR
+        MENUITEM "&Open Extraction Folder\tF2", ID_MEDIA_OPENEXTRACTFOLDER
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Tile\tF8",                   ID_WINDOW_TILE_HORZ
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...\tF1",               ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_MEDIA MENU 
+BEGIN
+    POPUP "0"
+    BEGIN
+        MENUITEM "&Properties",                 ID_MEDIA_PROPERTIES
+        MENUITEM "Set E&xtension",              ID_MEDIA_SET_EXTENSION
+        MENUITEM SEPARATOR
+        MENUITEM "&Extract",                    ID_MEDIA_EXTRACT
+        MENUITEM SEPARATOR
+        MENUITEM "Copy &Name",                  ID_MEDIA_COPY_NAME
+        MENUITEM "Copy &Offset",                ID_MEDIA_COPY_OFFSET
+        MENUITEM "Copy &Size",                  ID_MEDIA_COPY_SIZE
+        MENUITEM SEPARATOR
+        MENUITEM "Re&move",                     ID_MEDIA_REMOVE
+    END
+    POPUP "1"
+    BEGIN
+        MENUITEM "&View",                       ID_MEDIA_VIEW
+        MENUITEM "Set E&xtension",              ID_MEDIA_SET_EXTENSION
+        MENUITEM SEPARATOR
+        MENUITEM "&Extract",                    ID_MEDIA_EXTRACT
+        MENUITEM SEPARATOR
+        MENUITEM "Re&move",                     ID_MEDIA_REMOVE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_F3,          ID_ANALYZE_START,       VIRTKEY, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    VK_F4,          ID_EXTRACT_START,       VIRTKEY, NOINVERT
+    "W",            ID_FILE_CLOSE,          VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          ID_MEDIA_OPENEXTRACTFOLDER, VIRTKEY, NOINVERT
+    VK_TAB,         ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_TAB,         ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_MANAGEKEYS,          VIRTKEY, NOINVERT
+    VK_F6,          ID_KEYS_IMPORT,         VIRTKEY, NOINVERT
+    VK_F7,          ID_KEYS_EXPORT,         VIRTKEY, NOINVERT
+    VK_F1,          ID_APP_ABOUT,           VIRTKEY, NOINVERT
+    VK_F8,          ID_WINDOW_TILE_HORZ,    VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 191, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " About"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,11,20,20
+    CTEXT           "Copyright © 2011 Block Alexander ",IDC_STATIC,7,116,114,8,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,66,139,58,16,WS_GROUP
+    LTEXT           "This Programm provides ability to search the target file for the embedded files by the specific format parameters predefined as ""Keys""",IDC_STATIC,34,9,150,33,SS_NOPREFIX
+    EDITTEXT        IDC_EDIT_ABOUT_PRG,7,48,176,60,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,109,177,1
+    CTEXT           "GNU LGPL3 License",IDC_STATIC,7,125,62,8,WS_DISABLED
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,47,177,1
+END
+
+IDR_MAINFRAME DIALOGEX 0, 0, 330, 16
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "App",IDC_STATIC,12,4,300,8
+END
+
+IDD_REPORTDLG DIALOGEX 0, 0, 267, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,210,66,50,14
+    PUSHBUTTON      "&Exit",IDC_BTN_TERMINATE,210,90,50,14
+    GROUPBOX        "Description",IDC_STATIC,7,7,253,51
+    GROUPBOX        "Ambient environment",IDC_STATIC,7,62,195,42
+    EDITTEXT        IDC_EDIT_MESSAGE,11,18,248,39,ES_MULTILINE | ES_AUTOVSCROLL | ES_NOHIDESEL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL
+    LTEXT           "Last Error:",IDC_STATIC,13,75,35,8
+    EDITTEXT        IDC_EDIT_LASTERROR,51,75,144,20,ES_MULTILINE | ES_AUTOVSCROLL | ES_NOHIDESEL | ES_READONLY | NOT WS_BORDER
+END
+
+IDD_KEYEXPORT_DLG DIALOGEX 32, 19, 191, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Save to..",IDC_BTN_SAVETO,7,161,50,14
+    DEFPUSHBUTTON   "&Export",IDC_BTN_EXPORT,61,161,50,14,WS_DISABLED
+    PUSHBUTTON      "&Close",IDC_BTN_CLOSE,134,161,50,14
+    EDITTEXT        IDC_EDIT_EVENTLOG,7,7,177,136,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,152,177,1
+END
+
+IDD_KEYIMPORT_DLG DIALOGEX 32, 19, 191, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Open File..",IDC_BTN_OPENFILE,7,161,50,14
+    DEFPUSHBUTTON   "&Import",IDC_BTN_IMPORT,61,161,50,14,WS_DISABLED
+    PUSHBUTTON      "&Close",IDC_BTN_CLOSE,134,161,50,14
+    EDITTEXT        IDC_EVENTLOG,7,7,177,118,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT           "Import Type:",IDC_STATIC,7,143,43,8
+    COMBOBOX        IDC_CMB_IMPORT_TYPE,61,141,123,56,CBS_DROPDOWNLIST | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,132,177,1
+END
+
+IDD_ANAL_WIZPAGE_FILE DIALOGEX 0, 0, 235, 156
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION " Start Analyze Wizard..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "&Browse",IDC_BTN_OPEN,178,106,50,14
+    LTEXT           "Choose data source for analyze...",IDC_STATIC,7,7,221,8
+    LTEXT           "It may be:\n\t- complex file that is known to combine other files\n\t- removable media uncompressed image like CD/DVD\n\t- or HD raw partition image up to 8192 PBytes",IDC_STATIC,7,43,221,33
+    EDITTEXT        IDC_EDIT_FILENAME,7,106,169,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_ANAL_WIZPAGE_KEYS DIALOGEX 0, 0, 235, 191
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION " Start Analyze Wizard..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Select which keys should participate in analyze",IDC_STATIC,7,7,221,8
+    LTEXT           "Available Keys",IDC_STATIC,7,20,47,8
+    LISTBOX         IDC_LIST_AVAILABLE,7,31,93,153,LBS_SORT | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      ">",IDC_BTN_ADD,104,56,28,14
+    PUSHBUTTON      "<",IDC_BTN_DEL,104,75,28,14
+    PUSHBUTTON      ">>>",IDC_BTN_ADDALL,104,102,28,14
+    PUSHBUTTON      "<<<",IDC_BTN_DELALL,104,121,28,14
+    LTEXT           "Selected Keys",IDC_STATIC,137,20,46,8
+    LISTBOX         IDC_LIST_SELECTED,135,31,93,153,LBS_SORT | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+IDD_ANAL_WIZPAGE_ANAL DIALOGEX 0, 0, 235, 156
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION " Start Analyze Wizard..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "The Wizard has enough information to complete the task.",IDC_STATIC,7,7,221,8
+    LTEXT           "Please, uncheck that box below if you plan to complete Analyze at a later time.",IDC_STATIC,37,62,191,19
+    CONTROL         "Start Analyze Now",IDC_CHECK_START_NOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,93,75,10
+    LTEXT           "The File Analyze may be started manualy through [Media]->[Start Analyze] Main menu.",IDC_STATIC,37,118,191,19
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "LegalCopyright", "GNU LGPL3"
+            VALUE "OriginalFilename", "FileKeySearch.exe"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_REPORTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_KEYEXPORT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_KEYIMPORT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_ANAL_WIZPAGE_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_ANAL_WIZPAGE_KEYS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_ANAL_WIZPAGE_ANAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "FileKeySearch"
+    IDR_APP_TYPE            "\nFileKeySearch\nFileKeySearch\nFileKeySearch Result (*.FileKeySearch)\n.FileKeySearch\nFileKeySearch Result\nFileKeySearch Result"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "FileKeySearch"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display information about FileKeySearch application.\nAbout FileKeySearch..."
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+    ID_VIEW_AUTOARRANGE     "Arrange icons on a grid."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SMALLICON       "Display items by using small icons.\nSmall Icons"
+    ID_VIEW_LARGEICON       "Display items by using large icons.\nLarge Icons"
+    ID_VIEW_LIST            "Displays items in a list.\nList"
+    ID_VIEW_DETAILS         "Displays detailed information about each item in the window.\nDetails"
+    ID_VIEW_LINEUP          "Arranges icons in a grid."
+    ID_VIEW_BYNAME          "Sorts the icons alphabetically."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SIGNATURE_NEW        "Add new key signature.\nAdd New Key..."
+    ID_MANAGEKEYS           "Manage Signature Keys.\nKeys Manager..."
+    ID_KEYS_IMPORT          "Import Keys from REG File.\nImport Keys from File..."
+    ID_KEYS_EXPORT          "Export Keys to REG File.\nExport Keys to File..."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_KEYS_ANAL            "Start file Analyze with specified keys.\nAnalyze"
+    ID_EXTRACT_START        "Extract selected Media to separated files.\nExtract"
+    ID_ANALYZE_START        "Start Analyze that file with selected keys.\nAnalyze"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MEDIA_RUN            "External preview."
+    ID_MEDIA_EXTRACT        "Extract selected item."
+    ID_MEDIA_RENAME         "Rename this item"
+    ID_MEDIA_OPEN           "Open and/or Preview selected item in external viewer."
+    ID_MEDIA_SET_EXTENSION  "Select extension from available set of extensions for this Key."
+    ID_MEDIA_PROPERTIES     "Edit media properties"
+    ID_MEDIA_COPY_NAME      "Copy media filename"
+    ID_MEDIA_COPY_OFFSET    "Copy media offset"
+    ID_MEDIA_COPY_SIZE      "Copy media size"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MEDIA_OPENEXTRACTFOLDER "Open Extraction Folder"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MEDIA_PROPERTIES    BITMAP                  "res\\IDB_MEDIA_PROPERTIES.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MEDIA_DLG DIALOGEX 0, 0, 160, 123
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Media Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,25,102,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,85,102,50,14
+    LTEXT           "Name",IDC_STATIC,12,14,19,8
+    EDITTEXT        IDC_TXT_NAME,42,12,105,14,ES_AUTOHSCROLL
+    LTEXT           "Offset",IDC_STATIC,12,38,22,8
+    EDITTEXT        IDC_TXT_OFFSET,42,36,105,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Size",IDC_STATIC,12,62,14,8
+    EDITTEXT        IDC_TXT_SIZE,42,60,105,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Expands till &EOF",IDC_CHECK_END,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,78,67,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,96,146,1
+END
+
+IDD_MEDIA_EXTRACT_DLG DIALOGEX 0, 0, 242, 57
+STYLE DS_ABSALIGN | DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | DS_CENTERMOUSE | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_PALETTEWINDOW | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION " Extraction..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_TXT_PROGRESS,7,8,228,8,SS_PATHELLIPSIS
+    CONTROL         "",IDC_PROGRESS_BAR,"msctls_progress32",0x0,7,20,228,8
+    PUSHBUTTON      "&Suspend",IDC_BTN_PAUSE,127,36,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,185,36,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MEDIA_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_MEDIA_EXTRACT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Hebrew resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+#ifdef _WIN32
+LANGUAGE LANG_HEBREW, SUBLANG_DEFAULT
+#pragma code_page(1255)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_KEY_GOLD       ICON                    "res\\IDI_ICON_KEY_GOLD.ico"
+IDI_ICON_KEY_GREY       ICON                    "res\\IDI_ICON_KEY_GREY.ico"
+IDI_ICON_LEAF_GREY      ICON                    "res\\IDI_ICON_LEAF_GREY.ICO"
+IDI_ICON_LEAF_RED       ICON                    "res\\IDI_ICON_LEAF_RED.ICO"
+IDI_ICON_KEY_RED        ICON                    "res\\IDI_ICON_KEY_RED.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TB_APP              BITMAP                  "res\\IDR_TB_APP.bmp"
+IDB_MEDIA_EXTRACT       BITMAP                  "res\\IDB_MEDIA_EXTRACT.bmp"
+IDB_MEDIA_REMOVE        BITMAP                  "res\\IDB_MEDIA_REMOVE.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TB_APP TOOLBAR  32, 32
+BEGIN
+    BUTTON      ID_ANALYZE_START
+    BUTTON      ID_EXTRACT_START
+    SEPARATOR
+    BUTTON      ID_MANAGEKEYS
+    BUTTON      ID_KEYS_IMPORT
+    BUTTON      ID_KEYS_EXPORT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MANAGER_DLG DIALOGEX 0, 0, 321, 299
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Key Collection {$count}",IDC_TXT_KEYLIST_TITLE,7,7,76,8
+    LISTBOX         IDC_LIST_KEYNAMES,7,18,102,233,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&New",IDC_BTN_NEW_KEY,7,257,50,14
+    PUSHBUTTON      "&Delete",IDC_BTN_DELETE_KEY,59,257,50,14
+    GROUPBOX        "Properties",IDC_STATIC,118,7,195,265
+    CONTROL         "Comment",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,128,20,31,8
+    EDITTEXT        IDC_EDIT_COMMENT,170,18,134,14,ES_AUTOHSCROLL
+    CONTROL         "Extensions",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,128,44,36,8
+    EDITTEXT        IDC_EDIT_EXTENSIONS,170,42,134,14,ES_AUTOHSCROLL
+    GROUPBOX        "Embedded File Size (4 Bytes placeholder)",IDC_STATIC,128,66,176,86
+    CONTROL         "Offset",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,137,84,22,8
+    EDITTEXT        IDC_EDIT_CSO,170,82,38,13,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN_CSO,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,208,81,11,14
+    CONTROL         "(zero based index)",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,224,85,61,8
+    CONTROL         "Value at offset represents:",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,137,102,88,8
+    CONTROL         "Content size without header/signature size",IDC_RADIO_CSO_TYPE_CONTENT,
+                    "Button",BS_AUTORADIOBUTTON,145,119,153,10
+    CONTROL         "Total File Size",IDC_RADIO_CSO_TYPE_TOTAL,"Button",BS_AUTORADIOBUTTON,145,134,59,10
+    CONTROL         "Skip following keys in scope of",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,128,164,97,8
+    EDITTEXT        IDC_EDIT_SKIP_SCOPE,231,162,38,14,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN_SKIP_SCOPE,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS,269,162,11,14
+    CONTROL         "Bytes",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,286,165,19,8
+    CONTROL         "Signature, max 1024B (ex: 4D 5A 09)",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,128,185,121,8
+    EDITTEXT        IDC_EDIT_SIGNATURE,128,196,176,66,ES_MULTILINE | ES_UPPERCASE | ES_AUTOVSCROLL | WS_VSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,155,279,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,210,279,50,14
+    PUSHBUTTON      "&Apply",IDC_BTN_APPLY,264,279,50,14
+END
+
+IDD_NEWKEYNAME_DLG DIALOGEX 0, 0, 186, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Set name:",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,13,10,34,8
+    EDITTEXT        IDC_EDIT_NEWNAME,60,7,119,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,34,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,34,50,14
+END
+
+IDD_KEYUPDATE_DLG DIALOGEX 0, 0, 356, 157
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "This Analyze Data File contains number of unknown Keys definitions that was used prior his generation.",IDC_STATIC,7,7,342,17
+    LTEXT           "They are:",IDC_STATIC,7,26,32,8
+    CONTROL         "",IDC_LIST_KEYS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SORTASCENDING | LVS_NOLABELWRAP | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,35,342,86
+    DEFPUSHBUTTON   "&Add",IDOK,244,136,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,299,136,50,14
+    PUSHBUTTON      "&Manage Global Keys",IDC_BTN_KEYMANAGER,7,136,80,14
+END
+
+IDD_ANALYZE_DLG DIALOGEX 0, 0, 242, 57
+STYLE DS_ABSALIGN | DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | DS_CENTERMOUSE | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_PALETTEWINDOW | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Suspend",IDC_BTN_PAUSE,127,36,50,14,WS_DISABLED
+    COMBOBOX        IDC_CMB_MEMORY,35,36,64,84,CBS_DROPDOWNLIST | WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,185,36,50,14,WS_DISABLED
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",0x0,7,20,228,8
+    CONTROL         "Buffer:",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,7,39,24,8
+    LTEXT           "Initialization...",IDC_STATIC_STATISTICS,7,8,228,8
+END
+
+IDD_NEWEXT_DLG DIALOGEX 0, 0, 154, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,25,34,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,79,34,50,14
+    CONTROL         "Set extension:",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,17,9,48,8
+    COMBOBOX        IDC_CMB_EXT,75,7,62,61,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MANAGER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 292
+    END
+
+    IDD_NEWKEYNAME_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_KEYUPDATE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_ANALYZE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_NEWEXT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Hebrew resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
