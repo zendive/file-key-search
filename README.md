@@ -1,6 +1,8 @@
 # file-key-search
 Search and extract by file signature
 
+![screenshot](./doc/screenshot-globalKeysManagerDialog.png)
+
 #### About
 
 This Programm provides ability to search the target file for the embedded files by the specific format parameters predefined as "Keys" disregarding the rules of such file packaging.
